@@ -19,16 +19,70 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <title>Website Template</title>
+    <style>
+      .card-img-top {
+        max-height: 200px;
+        object-fit: cover;
+      }
+      
+      .card {
+        height: 100%;
+      }
+    </style> <!--The styling above is set up in order to limit the size of the card images so they do not apear to large on screen -->
   </head>
 
   <!-- body content is what is displayed in browser -->
   <body>
     <!-- Placeholder for navigation that is in navbar.html-->
     <div id="nav-placeholder"></div>
-    <div class="container p-5 my-5 border">
+    <div class="container p-5 my-5 border"> <!--this keeps the card from expanding the whole page -->
       <h1>Community</h1>
       <p>Fortunatley for you, there are plenty of community recourses for Lego Moc building.</p>
     </div>
+    
+ <div class="container py-4"> <!--this div seperates the sides of the webpage from the cards--> 
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+    <div class="card">
+      <img src="https://cdn.glitch.global/cc21c5eb-8455-44e4-8a4b-be15ffb401a6/Solidbrix%20Studio.png?v=1746311868127" class="card-img-top" alt="SolidBrix Studio">
+      <div class="card-body">
+        <h5 class="card-title">Solid Brix Studios</h5>
+        <p class="card-text">Solid Brix Studios (David Hall), is one of the most well known Lego Star Wars Moc builders.</p>
+        <a href="https://www.youtube.com/channel/UC_EahESpmOsO_5hAmsNSqlw" target="_blank" class="btn btn-primary">YouTube</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://cdn.glitch.global/cc21c5eb-8455-44e4-8a4b-be15ffb401a6/Firebird%20Bricks.jpg?v=1746313873131" class="card-img-top" alt="Firebird Bricks">
+      <div class="card-body">
+        <h5 class="card-title">Firebird Bricks</h5>
+        <p class="card-text">Firebird Bricks is a great resource for people looking to get into Lego Moc building. From interviewing other prominent Lego Moc builders, to video guides, and tips and tricks, Firebird Bricks has got you covered on any Lego Moc discussion.</p>
+        <a href="https://www.youtube.com/@firebirdbricks/featured" target="_blank" class="btn btn-primary">YouTube</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="https://cdn.glitch.global/cc21c5eb-8455-44e4-8a4b-be15ffb401a6/Beyond%20The%20Brick.jpg?v=1746314600933" class="card-img-top" alt="Beyond The Brick">
+      <div class="card-body">
+        <h5 class="card-title">Beyond The Brick</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        <a href="https://www.youtube.com/@BeyondtheBrick/featured" target="_blank" class="btn btn-primary">YouTube</a>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+</div>  
+</div>    
 
     <!--  script code to add navbar -->
     <script>
